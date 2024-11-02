@@ -1,0 +1,72 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+}
+
+        .wrapper {
+
+            width: 933px;
+
+            height: 800px;
+
+            background-color: rgb(10, 10, 10);
+
+        }
+
+        .column {  
+
+            display:inline-block;
+
+            height: 100%;
+
+            width: 300px;}
+
+        .column1 {
+
+            background-color: green;
+
+        }
+
+        .column2 {
+
+            background-color: white;
+
+        }
+
+        .column3 {
+
+            background-color: orange;
+
+        }
+/* Media query for screens 1200px and above */
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 100vw; /* Make the wrapper full width of the viewport */
+    }
+    .column {
+        width: 400px; /* Set each column to 400px width */
+    }
+}
+
+/* Media query for screens 900px and above */
+@media (min-width: 900px) {
+    .column {
+        width: 33%; /* Set each column to take up 33% of the wrapper's width */
+    }
+}
+
+/* Media query for screens 700px and below */
+@media (max-width: 700px) {
+    .column {
+        display: block; /* Change columns to block display, stacking them vertically */
+        width: 100%; /* Each column takes full width of the wrapper */
+        height: 200px; /* Set a fixed height of 200px for smaller screens */
+    }
+}
+          
+          
